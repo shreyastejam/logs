@@ -1,0 +1,93 @@
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  width: 496px;
+  height: 120px;
+  left: 0px;
+  top: 0px;
+  /* Inside Auto Layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 10px;
+}
+
+div header {
+  position: absolute;
+  left: 50px;
+  width: 396px;
+  top: 25px;
+  bottom: 67px;
+}
+
+div header span {
+  position: absolute;
+  width: 132px;
+  height: 28px;
+  left: 0px;
+  top: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+div header tools {
+  display: inline;
+  position: absolute;
+  width: 70.71px;
+  height: 25px;
+  left: 325px;
+  top: 1px;
+}
+
+div header tools svg[id=edit] {
+  position: absolute;
+  width: 26.26px;
+  height: 25px;
+  left: 0px;
+  top: 0px;
+  color: #4C4C4C;
+}
+
+div header tools svg[id=delete] {
+  position: absolute;
+  width: 19.44px;
+  height: 25px;
+  left: 51.26px;
+  top: 0px;
+  color: #4C4C4C;
+}
+
+div description {
+  position: absolute;
+  width: 396px;
+  left: 50px;
+  top: 63px;
+  bottom: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #808080;
+}
+/*# sourceMappingURL=desktop_c.css.map */

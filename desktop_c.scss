@@ -1,0 +1,92 @@
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // padding: 25px 50px;
+
+    position: absolute;
+    width: 496px;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+    // background-color: aqua;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    header{
+        position: absolute;
+        left: 50px;
+        width: 396px;
+        top: 25px;
+        bottom: 67px;
+        // background-color: blue;
+        span{
+            // display: flex;
+            position: absolute;
+            width: 132px;
+            height: 28px;
+            left: 0px;
+            top: 0px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;//reduced by 2px
+            line-height: 28px;
+            text-transform: uppercase;
+            // background-color:yellow;
+
+            color: #333333;
+        }
+        tools{
+            display: inline;
+            position: absolute;
+            width: 70.71px;
+            height: 25px;
+            left: 325px;
+            top: 1px;  
+            // background-color: yellow;
+            svg[id=edit]{
+                position: absolute;
+                width: 26.26px;
+                height: 25px;
+                left: 0px;
+                top: 0px;
+
+                color: #4C4C4C;
+            } 
+            svg[id=delete]{
+                position: absolute;
+                width: 19.44px;
+                height: 25px;
+                left: 51.26px;
+                top: 0px;
+
+                color: #4C4C4C;
+            }
+        }
+    }
+    description{
+        position: absolute;
+        width: 396px;
+        left: 50px;
+        // right: 10.08%;
+        top: 63px;
+        bottom: 25px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+
+        color: #808080;
+        // background-color: greenyellow;
+    }
+}
