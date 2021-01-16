@@ -228,6 +228,7 @@ button[class=save] {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
+  border: none;
   position: absolute;
   width: 188.46px;
   height: 90px;
@@ -283,6 +284,7 @@ button[class=exit] {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
+  border: none;
   position: absolute;
   width: 174px;
   height: 90px;
