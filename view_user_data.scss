@@ -182,9 +182,10 @@
     
 
 }
-@media screen and (max-width:800px) {
+@media only screen and (max-width:800px) {
     .view_user, .sidebar {
       width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+      background-color: aqua;
     }
   }
 
@@ -403,7 +404,7 @@
         flex-direction: row;
         align-items: center;
         padding: 25px;
-    
+        border: none;
         position: absolute;
         width: 155px;
         height: 76px;
@@ -471,7 +472,7 @@
         flex-direction: row;
         align-items: center;
         padding: 30px;
-    
+        border: none;
         position: absolute;
         width: 200.29px;
         height: 90px;
@@ -536,7 +537,7 @@
         flex-direction: row;
         align-items: center;
         padding: 30px;
-    
+        border: none;
         position: absolute;
         width: 196.51px;
         height: 90px;
@@ -601,7 +602,7 @@
         flex-direction: row;
         align-items: center;
         padding: 30px;
-    
+        border: none;
         position: absolute;
         width: 200.29px;
         height: 90px;
