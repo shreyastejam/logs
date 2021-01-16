@@ -1,5 +1,5 @@
 <?
 
-include_once("add_user.html");
+include_once("add_user_view.html");
 
 ?>
