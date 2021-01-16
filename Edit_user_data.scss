@@ -1,11 +1,11 @@
 body {
-    animation-name: diagonal-slide;
+    animation-name: animate;
 animation-timing-function: ease-in-out;
 animation-duration: 300ms;
 
   }
   
-  @keyframes diagonal-slide {
+  @keyframes animate {
   
     from {
       opacity: 0;
