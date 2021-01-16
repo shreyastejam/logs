@@ -1,44 +1,13 @@
-body {
-  -webkit-animation-name: animate;
-          animation-name: animate;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-}
-
-@-webkit-keyframes animate {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes animate {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .leftbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 75px 152px;
-  position: absolute;
-  width: 944px;
+  float: left;
+  position: relative;
+  width: 65%;
   height: 900px;
   left: 0px;
   top: 0px;
@@ -259,7 +228,6 @@ button[class=save] {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
-  border: none;
   position: absolute;
   width: 188.46px;
   height: 90px;
@@ -315,7 +283,6 @@ button[class=exit] {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
-  border: none;
   position: absolute;
   width: 174px;
   height: 90px;
@@ -359,38 +326,31 @@ button[class=exit] span {
 }
 
 .sidebar {
-  position: absolute;
-  width: 496px;
+  position: relative;
+  width: 35%;
   height: 900px;
-  left: 944px;
   top: 0px;
   background: #F7F7F7;
+  float: left;
 }
 
 .sidebar .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: absolute;
-  width: 452.48px;
+  width: auto;
   height: 80.4px;
+  right: 20px;
   left: 22px;
   top: 43px;
+  padding: 20px 0px;
   background: #E5E5E5;
   border-radius: 15px;
 }
 
 .sidebar .input input {
   position: absolute;
-  width: 350px;
+  width: 70%;
   height: 28px;
+  right: 40px;
   left: 82.48px;
   top: 26.2px;
   font-family: Roboto;
@@ -421,20 +381,11 @@ button[class=exit] span {
 }
 
 .sidebar users-in-search div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   position: absolute;
-  width: 496px;
+  width: auto;
   height: 120px;
   left: 0px;
+  right: 0px;
   top: 136px;
   /* Inside Auto Layout */
   -webkit-box-flex: 0;
@@ -450,15 +401,16 @@ button[class=exit] span {
 
 .sidebar users-in-search div header {
   position: absolute;
+  width: auto;
   left: 50px;
-  width: 396px;
+  right: 50px;
   top: 25px;
   bottom: 67px;
 }
 
 .sidebar users-in-search div header span {
   position: absolute;
-  width: 132px;
+  width: auto;
   height: 28px;
   left: 0px;
   top: 0px;
@@ -474,9 +426,9 @@ button[class=exit] span {
 .sidebar users-in-search div header tools {
   display: inline;
   position: absolute;
-  width: 70.71px;
+  width: auto;
   height: 25px;
-  left: 325px;
+  right: 50px;
   top: 1px;
 }
 
@@ -500,8 +452,9 @@ button[class=exit] span {
 
 .sidebar users-in-search div description {
   position: absolute;
-  width: 396px;
+  width: auto;
   left: 50px;
+  right: 50px;
   top: 63px;
   bottom: 25px;
   font-family: Roboto;
@@ -539,5 +492,39 @@ button[class=exit] span {
 
 .sidebar users-in-search .desktop_c8 {
   top: 780px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftbar, .sidebar {
+    width: 100%;
+    /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+body {
+  -webkit-animation-name: diagonal-slide;
+          animation-name: diagonal-slide;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes diagonal-slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes diagonal-slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=Edit_user_data.css.map */

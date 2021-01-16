@@ -1,31 +1,15 @@
-body {
-    animation-name: animate;
-animation-timing-function: ease-in-out;
-animation-duration: 300ms;
-
-  }
-  
-  @keyframes animate {
-  
-    from {
-      opacity: 0;
-      
-    }
-  
-    to {
-      opacity: 1;
-      
-    }
-  
-  }
+*{
+    box-sizing:border-box;
+}
 .leftbar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     padding: 75px 152px;
+    float: left;
     
-    position: absolute;
-    width: 944px;
+    position: relative;
+    width: 65%;
     height: 900px;
     left: 0px;
     top: 0px;
@@ -182,7 +166,7 @@ button[class=save]{
     flex-direction: row;
     align-items: center;
     padding: 30px;
-    border: none;
+
     position: absolute;
     width: 188.46px;
     height: 90px;
@@ -231,7 +215,7 @@ button[class=exit]{
     flex-direction: row;
     align-items: center;
     padding: 30px;
-    border: none;
+
     position: absolute;
     width: 174px;
     height: 90px;
@@ -275,29 +259,35 @@ button[class=exit]{
     }
 }
 .sidebar{
-    position: absolute;
-    width: 496px;
+    // display: flex;
+    position: relative;
+    width: 35%;
     height: 900px;
-    left: 944px;
+    // left: 944px;
     top: 0px;
+    background: #F7F7F7;
+    float: left;
     .input{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        // padding: 20px 0px;
-
+        // display: block;
+        // flex-direction: row;
+        // align-items: center;
+        
         position: absolute;
-        width: 452.48px;
+        width: auto;
         height: 80.4px;
+        right: 20px;
         left: 22px;
         top: 43px;
-
+        padding: 20px 0px;
+        // margin: 0px 20px;
+        
         background: #E5E5E5;
         border-radius: 15px;
         input{
             position: absolute;
-            width: 350px;
+            width: 70%;
             height: 28px;
+            right: 40px;
             left: 82.48px;
             top: 26.2px;
             font-family: Roboto;
@@ -329,18 +319,18 @@ button[class=exit]{
         }
     }
 
-    background: #F7F7F7;
     users-in-search{
         div{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: flex-start;
             // padding: 25px 50px;
         
             position: absolute;
-            width: 496px;
+            width: auto;
             height: 120px;
             left: 0px;
+            right: 0px;
             top: 136px;
             // background-color: aqua;
         
@@ -353,15 +343,16 @@ button[class=exit]{
             margin: 0px 10px;
             header{
                 position: absolute;
+                width: auto;
                 left: 50px;
-                width: 396px;
+                right: 50px;
                 top: 25px;
                 bottom: 67px;
                 // background-color: blue;
                 span{
                     // display: flex;
                     position: absolute;
-                    width: 132px;
+                    width: auto;
                     height: 28px;
                     left: 0px;
                     top: 0px;
@@ -379,9 +370,9 @@ button[class=exit]{
                 tools{
                     display: inline;
                     position: absolute;
-                    width: 70.71px;
+                    width: auto;
                     height: 25px;
-                    left: 325px;
+                    right: 50px;
                     top: 1px;  
                     // background-color: yellow;
                     svg[id=edit]{
@@ -406,9 +397,9 @@ button[class=exit]{
             }
             description{
                 position: absolute;
-                width: 396px;
+                width: auto;
                 left: 50px;
-                // right: 10.08%;
+                right: 50px;
                 top: 63px;
                 bottom: 25px;
         
@@ -448,3 +439,29 @@ button[class=exit]{
     
 
 }
+@media screen and (max-width:800px) {
+    .leftbar, .sidebar {
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+body {
+    animation-name: diagonal-slide;
+animation-timing-function: ease-in-out;
+animation-duration: 2s;
+
+  }
+  
+  @keyframes diagonal-slide {
+  
+    from {
+      opacity: 0;
+      
+    }
+  
+    to {
+      opacity: 1;
+      
+    }
+  
+  }
